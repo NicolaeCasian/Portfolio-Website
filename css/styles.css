@@ -1,0 +1,133 @@
+/* Apply styles to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+li {
+    list-style: none;
+}
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex; /* enables flex box*/
+    justify-content: space-between; /* Pushes items apart */
+    align-items: center; /* Aligns items vertically */
+    padding: 20px;
+    background-color: white;
+}
+
+.name {
+    flex: 1; /* Takes up available space */
+    text-align: left;
+}
+
+/* Styling for the profile image */
+.profile-image img {
+    width: 150px; /* Adjust the size */
+    height: 150px; /* Make it square */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures it maintains aspect ratio */
+    border: 3px solid white; /* Adds a border around the image */
+}
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styles */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+img {
+    size: 200px;
+}
+
+/* Style the dropdown button */
+.dropdown-btn {
+    display: flex;
+    justify-content: space-between; /* Ensures text and icon are spaced out */
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Rotate the icon when dropdown is active */
+.dropdown-btn .icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Rotate the icon when dropdown is open */
+.dropdown-btn.active .icon {
+    transform: rotate(180deg); /* Rotates the arrow */
+}
+
+/* Initially hide the dropdown content */
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Show dropdown when active */
+.active + .dropdown-content {
+    display: block;
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Change to any color you want */
+    font-weight: bold; /* Makes text bold */
+}
+
+a:hover {
+    color: #ff6600; /* Changes color when hovered */
+    text-decoration: underline; /* Optional: Add an underline on hover */
+}
+
+body {
+    background-color:;
+}
