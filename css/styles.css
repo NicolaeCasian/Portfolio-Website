@@ -9,59 +9,110 @@ body {
 li {
     list-style: none;
 }
+
 /* Header Styles */
 header {
-    background-color: #333;
-    color: #333;
-    padding: 20px;
-    text-align: center;
+    background-color: antiquewhite; /* Matches "About Me" section */
+    color: #333; /* Text color for readability */
+    padding: 20px; /* Space inside the header */
+    border-bottom: 2px solid #ddd; /* Subtle border at the bottom */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
 .header-container {
-    display: flex; /* enables flex box*/
-    justify-content: space-between; /* Pushes items apart */
-    align-items: center; /* Aligns items vertically */
-    padding: 20px;
-    background-color: white;
+    display: flex; /* Enable flexbox for layout */
+    justify-content: space-between; /* Spread items apart */
+    align-items: center; /* Align items vertically */
+    max-width: 1200px; /* Limit width of the header */
+    margin: 0 auto; /* Center the header */
+    flex-wrap: wrap; /* Make items stack on smaller screens */
+}
+
+.wrapper-navbar {
+    background-color: antiquewhite; /* Matches other sections */
+    color: #333; /* Text color */
+    width: 100%; /* Full width of the page */
+    padding: 10px 0; /* Vertical padding for spacing */
+    border-bottom: 1px solid #333;
+    text-align: center; /* Center menu items */
+}
+
+.navbar-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-body ul li {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.navbar-body ul li:hover {
+    color: #ff6600; /* Hover effect */
+    text-decoration: underline;
 }
 
 .name {
-    flex: 1; /* Takes up available space */
+    flex: 1;
     text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 20px;
+    line-height: 1.4;
 }
 
-/* Styling for the profile image */
-.profile-image img {
-    width: 150px; /* Adjust the size */
-    height: 150px; /* Make it square */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures it maintains aspect ratio */
-    border: 3px solid white; /* Adds a border around the image */
-}
-/* Navigation Styles */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
+.name a {
+    color: #ff6600;
     text-decoration: none;
     font-weight: bold;
 }
 
+.name a:hover {
+    text-decoration: underline;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-body ul {
+        flex-direction: column;
+    }
+}
+
 /* Section Styles */
 main {
-    padding: 20px;
+    background-color: antiquewhite;
+    color: #333;
+    border: 3px #333;
 }
 
 h2 {
     color: #333;
+    margin: 0;
 }
 
 /* Footer Styles */
@@ -74,60 +125,177 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 img {
     size: 200px;
 }
 
-/* Style the dropdown button */
-.dropdown-btn {
-    display: flex;
-    justify-content: space-between; /* Ensures text and icon are spaced out */
-    align-items: center;
-    cursor: pointer;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-/* Rotate the icon when dropdown is active */
-.dropdown-btn .icon {
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Rotate the icon when dropdown is open */
-.dropdown-btn.active .icon {
-    transform: rotate(180deg); /* Rotates the arrow */
-}
-
-/* Initially hide the dropdown content */
-.dropdown-content {
-    display: none;
-    padding: 10px;
-    background-color: #f4f4f4;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-
-/* Show dropdown when active */
-.active + .dropdown-content {
-    display: block;
-}
-
 a {
-    text-decoration: none; /* Removes underline */
-    color: #333; /* Change to any color you want */
-    font-weight: bold; /* Makes text bold */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 a:hover {
-    color: #ff6600; /* Changes color when hovered */
-    text-decoration: underline; /* Optional: Add an underline on hover */
+    color: #ff6600;
+    text-decoration: underline;
 }
 
-body {
-    background-color:;
+/* Contact section wrapper */
+.wrapper-contact {
+    padding: 30px; /* Add padding for spacing */
+    background-color: #333; /* Dark background for contrast */
+    color: #f4f4f4; /* Light text for visibility */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: auto; /* Center the section */
+    text-align: center; /* Center-align text */
+}
+
+/* Heading styling */
+.wrapper-contact h2 {
+    color: #f4f4f4; /* Heading color */
+    font-size: 2rem; /* Larger font size */
+    margin-bottom: 30px; /* Space below the heading */
+    font-weight: bold;
+}
+
+/* Contact info container for flexbox */
+.contact-info {
+    display: flex; /* Enable Flexbox for horizontal alignment */
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add spacing between items */
+    margin-top: 20px;
+}
+
+/* Individual contact details */
+.contact-info p {
+    margin: 0; /* Remove default margins */
+    font-size: 1rem; /* Adjust font size */
+}
+
+/* Link styling within contact details */
+.contact-info a {
+    color: #ffcc80; /* Light orange links for contrast */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Emphasize links */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-info a:hover {
+    color: #ffa64d; /* Darker orange on hover */
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .wrapper-contact {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Styling the #about section */
+#about {
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    max-width: 900px;
+    background-color: antiquewhite;
+}
+
+.about-body {
+    background: #fffaf0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    color: #444;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-body:hover {
+     transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-body p {
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* Project Cards */
+#projects {
+    text-align: center;
+    padding: 40px 20px;
+    background-color:antiquewhite;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #fffaf0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.card-link {
+    font-size: 1rem;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: #ff3300;
+    text-decoration: underline;
 }

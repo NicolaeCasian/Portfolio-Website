@@ -9,10 +9,19 @@
     <body>
         <header>
             <div class="header-container">
+                <div class="wrapper-navbar">
+                    <div class="navbar-body">
+                        <ul>
+                            <li><a href="#about">About </a></li>
+                            <li><a href="#projects">Portfolio</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="name">
-                    <h1>Nicolae Casian</h1>
+                    <h1>Hello I am Nicolae Casian !</h1>
                     <p>3rd Year Computer Science Student | Full-Stack Developer</p>
-                     <p> <a href="https://www.linkedin.com/in/nicolae-casian-4916381b3/">LinkedIn Profile Link </a></p>
+                    <p><a href="https://www.linkedin.com/in/nicolae-casian-4916381b3/">LinkedIn Profile Link </a></p>
                 </div>
                 <div class="profile-image">
                     <img src="images/1742083545662.jpeg" alt="Nicolae Casian" />
@@ -23,50 +32,62 @@
         <main>
             <section id="about">
                 <h2>About Me</h2>
-                <p>
-Aspiring software engineer with experience in Java, Python, Next.js, and SQL. Passionate about building scalable web and mobile applications and working in Agile teams. Developed projects like a campus lost & found app and a full-stack web app for Krispy Kreme. Seeking a software engineering\ development internship to apply my skills and grow.</p>
+                <div class="about-body">       
+                    <p>
+                        Aspiring software engineer with experience in Java, Python, Next.js, and SQL. Passionate about
+                        building scalable web and mobile applications and working in Agile teams. Developed projects
+                        like a campus lost & found app and a full-stack web app for Krispy Kreme. Seeking a software
+                        engineering\ development internship to apply my skills and grow.
+                    </p>
+                </div>
             </section>
 
             <section id="projects">
                 <h2>Projects</h2>
-                <ul>
-                    <li>
-                        <span class="dropdown-btn">Campus Lost and Found App <span class="icon">▼</span></span>
-                        <div class="dropdown-content">
-                            <p>A full-stack app developed with Ionic, Capacitor and MongoDB to help students find lost items and report found ones.</p>
-                            <a href="https://github.com/NicolaeCasian/Tud-Lost-Found-">GitHub Repository</a>
-                        </div>
-                    </li>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <h3>Campus Lost and Found App</h3>
+                        <p>
+                            A full-stack app developed with Ionic, Capacitor and MongoDB to help students find lost
+                            items and report found ones.
+                        </p>
+                        <a href="https://github.com/NicolaeCasian/Tud-Lost-Found-" class="card-link"
+                            >GitHub Repository</a
+                        >
+                    </div>
 
-                    <li>
-                        <span class="dropdown-btn">Krispy Kreme Web App <span class="icon">▼</span></span>
-                        <div class="dropdown-content">
-                            <p>Developed a scalable Next.js app with MongoDB and API integrations like node emailer and shwoing the wheater.</p>
-                            <a href="https://krispykremeltd.vercel.app">Link to Website</a>
-                        </div>
-                    </li>
+                    <div class="project-card">
+                        <h3>Krispy Kreme Web App</h3>
+                        <p>
+                            Developed a scalable Next.js app with MongoDB and API integrations like node emailer and
+                            showing the weather.
+                        </p>
+                        <a href="https://krispykremeltd.vercel.app" class="card-link">Link to Website</a>
+                    </div>
 
-                    <li>
-                        <span class="dropdown-btn">Personal Portfolio Website <span class="icon">▼</span></span>
-                        <div class="dropdown-content">
-                            <p>This is the portfolio website I built using HTML, CSS, and JavaScript to showcase projects.</p>
-                            <a href="https://github.com/NicolaeCasian/Portfolio-Website">GitHub Repository</a>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <script src="script.js"></script>
-
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <div class="contact-info">
-                     <p>Email: <a href="mailto:nicolaecasian84@gmail.com">nicolaecasian84@gmail.com</a></p>
-                     <p>Phone Number: <a href="">+353 0838366855</a></p>
-                    
+                    <div class="project-card">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>
+                            This is the portfolio website I built using HTML, CSS, and JavaScript to showcase projects.
+                        </p>
+                        <a href="https://github.com/NicolaeCasian/Portfolio-Website" class="card-link"
+                            >GitHub Repository</a
+                        >
+                    </div>
                 </div>
-               
-                
             </section>
+
+            <script src="script.js"></script>
+            <div class="wrapper-contact">
+                <section id="contact">
+                    <h2>Contact Me</h2>
+                    <div class="contact-info">
+                        <p>Email: <a href="mailto:nicolaecasian84@gmail.com"> nicolaecasian84@gmail.com</a></p>
+                        <p>Phone Number: <a href=""> +353 0838366855</a></p>
+                        <p>Linked In: <a href="https://www.linkedin.com/in/nicolae-casian-4916381b3/"> Nicolae Casian's LinkedIn</a></p>
+                    </div>
+                </section>
+            </div>
         </main>
 
         <footer>
