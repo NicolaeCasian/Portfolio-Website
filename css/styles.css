@@ -298,3 +298,42 @@ a:hover {
     color: #ff3300;
     text-decoration: underline;
 }
+
+embed {
+  /* Make the element a block so it respects width settings */
+  display: block;
+  
+  /* Responsive width with a max-width to avoid it stretching too huge */
+  width: 100%;
+  max-width: 800px;
+  
+  /* Set a fixed height (you can adjust as needed) */
+  height: 700px;
+  
+  /* Add a soft border and rounded corners for a cleaner look */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  
+  /* Center the element using margin auto */
+  margin:  auto;
+  
+  /* Optional: add a subtle shadow to help it stand out */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    padding-bottom: 20px;
+}
+
+/* Adjust height for smaller screens if needed */
+@media screen and (max-width: 768px) {
+  embed {
+    height: 400px;
+  }
+}
+
+.h2-cv {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    padding-bottom: 20px;
+}
+
